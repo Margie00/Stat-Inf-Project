@@ -1,0 +1,7 @@
+price_cutoff <- quantile(flights$price, 0.99)
+flights_clean <- subset(flights, price <= price_cutoff)
+
+hist(flights_clean$price,
+     main = "Distribution of Flight Prices (Outliers Removed)",
+     xlab = "Price",
+     ylab = "Frequency")
