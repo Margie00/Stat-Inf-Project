@@ -1,0 +1,20 @@
+
+price_mean <- mean(flights$price)
+price_median <- median(flights$price)
+price_variance <- var(flights$price)
+price_sd <- sd(flights$price)
+
+duration_mean <- mean(flights$duration)
+duration_median <- median(flights$duration)
+duration_variance <- var(flights$duration)
+duration_sd <- sd(flights$duration)
+
+price_mean
+price_median
+price_variance
+price_sd
+
+duration_mean
+duration_median
+duration_variance
+duration_sd
