@@ -1,0 +1,6 @@
+plot(flights$duration, flights$price,
+     xlab = "Flight Duration (hours)",
+     ylab = "Flight Price",
+     main = "Flight Price vs Flight Duration")
+
+cor(flights$duration, flights$price)
