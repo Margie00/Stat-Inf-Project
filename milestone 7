@@ -1,0 +1,6 @@
+
+price_ci <- t.test(flights$price)$conf.int
+duration_ci <- t.test(flights$duration)$conf.int
+
+price_ci
+duration_ci
