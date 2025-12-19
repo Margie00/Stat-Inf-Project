@@ -1,0 +1,20 @@
+hist(flights$price,
+     main = "Distribution of Flight Prices",
+     xlab = "Price",
+     ylab = "Frequency")
+
+hist(flights$duration,
+     main = "Distribution of Flight Duration",
+     xlab = "Duration (hours)",
+     ylab = "Frequency")
+
+barplot(table(flights$airline),
+        main = "Number of Flights by Airline",
+        xlab = "Airline",
+        ylab = "Count",
+        las = 2)
+
+barplot(table(flights$stops),
+        main = "Number of Flights by Number of Stops",
+        xlab = "Stops",
+        ylab = "Count")
