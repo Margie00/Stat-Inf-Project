@@ -1,0 +1,6 @@
+nonstop <- subset(flights, stops == "zero")$price
+stops <- subset(flights, stops != "zero")$price
+
+t.test(stops, nonstop, alternative = "greater")
+
+cor.test(flights$duration, flights$price)
