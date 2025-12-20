@@ -1,0 +1,8 @@
+
+boxplot(price ~ class,
+        data = flights,
+        main = "Flight Price by Ticket Class",
+        xlab = "Ticket Class",
+        ylab = "Price")
+
+t.test(price ~ class, data = flights)
